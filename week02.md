@@ -16,7 +16,7 @@ TODO: See [OWASP Top 10 Vulnerabilities for web app](https://owasp.org/www-proje
 
 TODO: See [SANS Top 25 Software Errors](https://www.sans.org/top25-software-errors/)
 
-These are common software vulnerabilities (TODO: elaborate):
+These are common software vulnerabilities (TODO: elaborate, this is the main foccus of this week material):
 * Buffer overflow
 * Unvalidated input
 * XSS
