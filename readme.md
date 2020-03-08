@@ -10,3 +10,4 @@ Note: In this term, the instructor is ofsetting the week index with +1. E.g: wee
 * [Week 04: Defensive Coding 2 Java](week04.md)
 * [Week 05: Defensive Coding for Concurrency](week05.md)
 * [Week 06: Code Review and Static Analysis](week06.md)
+* [Week 07: Security Testing: Foundations](week07.md)
