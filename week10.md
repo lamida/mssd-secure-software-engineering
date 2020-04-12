@@ -28,13 +28,28 @@ Example: the halting problem
 * symbolic execution
 
 # Software Model Checking
-Determining whether a program satisfies a property by the means of exhaustive searching.
-Pioneers: Edmund D. Clarke, Allen Emerson, Joseph Sifakis. Turing award 2007
-Intel i7 processor (8 cores, millions of registers) is verified by symbolic model checking without a single test case
-The slam project (static driver verifier, shipped with Windows 7) from Microsoft successfully detected many bugs in many driver software
+* Determining whether a program satisfies a property by the means of exhaustive searching.
+* Pioneers: Edmund D. Clarke, Allen Emerson, Joseph Sifakis. Turing award 2007
+* Intel i7 processor (8 cores, millions of registers) is verified by symbolic model checking without a single test case
+* The slam project (static driver verifier, shipped with Windows 7) from Microsoft successfully detected many bugs in many driver software
 
+# Model, property, model checker
+* Model: representation of the system: Kripke Structure
+* Property: specification that the final system is expected to satisfy
+* Model checker: tool that accept a model and a property as inputs and outputs. Yes if the given model satisfies given speficifications and generates a counterexample otherwise
 
+# Kripke Structure
+We model program using kripke structure
 
+A Kripke structure is a tuple (S, R, L, I)
+* S: set of states
+* R: set of relations between states
+* I: non-empty states of initial states
+* L: lables each state by a set of valid atomic propositions in the state
+
+# Property
+* Temporal logic: succint and precise way of describing program properties
+* Amir Pnueli
 
 
 
