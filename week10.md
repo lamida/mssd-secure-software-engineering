@@ -51,5 +51,21 @@ A Kripke structure is a tuple (S, R, L, I)
 * Temporal logic: succint and precise way of describing program properties
 * Amir Pnueli
 
+# Linear Temporal Logic
+* There is only one linear future. Program = set of sequences of states
+* LTL is built up from a finite set of propositions, the logical operator "not" and "or", and the following temporal model operators
+    * X: next
+    * G: always
+    * F: eventually
+    * U: until
+    
+Semantics: given a sequence of states of a Kripke Structure:
+* *p* is satisfied at the i-th state of the sequence if p is one of the propositions labeling the state
+* *X* p is satisfied at the i-th state of the sequence if p is satisfied at the (i+1)-th state
+* *G* p is satisfied at the i-th state of the sequence if p is satisfied at every state from (inclusive) the i-th state
+* *F* p is satisfied at the i-th state of the sequence if p is satisfied at least one state from (inclusive) the i-th state
+* p *U* q is satisfied at the i-th state of the sequence if there exists a future (i+k+1)-th state satisfying q and p is satisfied at every state from (inclusive) the i-th state until the (i+k+1)-th state (exclusive)
+    
+
 
 
